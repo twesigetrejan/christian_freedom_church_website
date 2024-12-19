@@ -16,7 +16,7 @@ const Navbar = () => {
               </Link>
             ))}
         </div>
-        <div className="rounded-2xl bg-primary flex px-5 py-[6px] justify-center text-white hover:text-primary hover:bg-white">
+        <div className="rounded-[14px] bg-primary flex px-5 py-[6px] justify-center text-white hover:text-primary hover:bg-white">
           <button className="">Donate</button>
         </div>
       </div>
