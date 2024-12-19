@@ -1,3 +1,4 @@
+// import { Montserrat } from "@next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -49,7 +50,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Open Sans"', "sans-serif"], // Default sans font
+        sans: ['"Open Sans"', "sans-serif"],
+        Montserrat: ['"Montserrat"', "sans-serif"] 
       },
       borderRadius: {
         lg: "var(--radius)",

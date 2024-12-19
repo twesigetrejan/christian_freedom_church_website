@@ -1,9 +1,9 @@
-import Image from "next/Image";
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="px-10">
       <div className="items-center flex justify-center pt-[52px] pb-[15px]">
         <Image
           src={"/Images/hero-image.png"}
@@ -13,18 +13,18 @@ const Hero = () => {
           className="object-cover "
         />
       </div>
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-dark font-sans font-bold">
+      <div className="flex flex-col items-start">
+        <h1 className="text-dark font-bold text-[64px] ">
           Become part of something great
         </h1>
 
         <div className="flex justify-center items-center gap-[37px]">
-          <h1 className="text-dark font-sans font-bold">
+          <h1 className="text-dark text-[64px] font-bold">
             today, cfc welcomes you
           </h1>
-          <button className="btn">
+          <button className="btn flex items-center">
             Get started
-            <ChevronRightIcon className="w-4 h-4 ml-2" />
+            <ArrowRight className="w-4 h-4 ml-2" />
           </button>
         </div>
       </div>

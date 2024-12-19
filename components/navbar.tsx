@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex">
           <Logo />
         </div>
-        <div className=" flex gap-[52px] justify-center items-center">
+        <div className=" flex gap-[52px] justify-center items-center font-sans">
           {navlinks &&
             navlinks.map((navlink) => (
               <Link className="" key={navlink.id} href={navlink.route}>
