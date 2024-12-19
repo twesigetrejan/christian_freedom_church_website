@@ -1,19 +1,20 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Container from "@/components/container";
 
 const Hero = () => {
   return (
-    <div className="px-10">
-      <div className="items-center flex justify-center pt-[52px] pb-[60px]">
+    <Container >
+      <div className="items-center flex justify-center pt-[52px] pb-[60px] w-full">
         <Image
           src={"/Images/hero-image.png"}
           alt={"hero image"}
-          width={1200}
+          width={1280}
           height={320}
           className="object-cover "
         />
       </div>
-      <div className="flex flex-col items-start pb-[52px]">
+      <div className="flex flex-col items-start pb-[52px] ">
         <h1 className="text-dark font-bold text-[64px] ">
           Become part of something great
         </h1>
@@ -28,7 +29,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
