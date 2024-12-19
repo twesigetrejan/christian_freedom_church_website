@@ -11,21 +11,21 @@ export const navlinks: {
   {
     id: 1,
     title: "Services",
-    route: "/services",
+    route: "/",
   },
   {
     id: 2,
     title: "Events",
-    route: "/events",
+    route: "/",
   },
   {
     id: 3,
     title: "Contact",
-    route: "/contact",
+    route: "",
   },
   {
     id: 4,
     title: "About",
-    route: "/about",
+    route: "",
   },
 ];
