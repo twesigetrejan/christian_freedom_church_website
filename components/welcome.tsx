@@ -34,7 +34,7 @@ const WelcomeMessage = () => {
       {/* content section */}
 
       {/* video section */}
-      <div className="relative w-[500px] h-[500px] rounded-2xl overflow-hidden">
+      <div className="relative w-[400px] h-[400px] rounded-2xl overflow-hidden">
         {isPlaying ? (
           <Video />
         ) : (
@@ -50,23 +50,23 @@ const WelcomeMessage = () => {
             <Image
               src={"/Images/welcome.jpg"}
               alt={"Sunday second service welcome message"}
-              width={500}
-              height={500}
-              className="w-full object-cover object-center rounded-md h-[500px]"
+              width={400}
+              height={400}
+              className="w-full object-cover object-center rounded-md h-[400px]"
             />
           </div>
         )}
       </div>
       <div className="py-[117px] flex flex-col items-start">
-        <h2 className="pb-8 font-Montserrat text-[40px] font-semibold w-[580px] h-auto text-dark">
+        <h2 className="pb-8 font-Montserrat text-[32px] font-semibold w-[580px] h-auto text-dark">
           Welcome to Christian Freedom Church!
         </h2>
         <div className="flex flex-col gap-4 pb-8 max-w-[496px]">
-          <p className="text-xl">
+          <p className="text-[16px]">
             Join a community where we uplift, support and grow together in faith
             Welcome to freedom!
           </p>
-          <p className="text-xl">
+          <p className="text-[16px]">
             Our doors are open, our hearts are full, and our mission is clear:
             to share God's love and walk in his freedom.
           </p>

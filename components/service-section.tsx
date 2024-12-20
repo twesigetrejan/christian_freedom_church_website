@@ -9,16 +9,18 @@ const ServiceSection = () => {
         <h2 className="pb-10 font-Montserrat text-[40px] font-semibold text-dark flex justify-center">
           Our Services
         </h2>
-        <div className="grid grid-cols-3 gap-[120px] rounded-2xl relative ">
+        <div className="grid grid-cols-3 gap-[120px] rounded-2xl relative">
           {ServiceCardProps &&
             ServiceCardProps.map((ServiceCardProp) => (
-              <div className="relative" key={ServiceCardProp.id}>
+              <div
+                className="relative h-[400px] w-[320px]"
+                key={ServiceCardProp.id}
+              >
                 <Image
                   src={ServiceCardProp.image}
                   alt="service image"
-                  className="object-contain rounded-2xl"
-                  width={320}
-                  height={500}
+                  className="object-cover rounded-2xl"
+                  layout="fill"
                 />
                 <div className="absolute bottom-0 left-0 bg-primary text-white w-[86px] h-[80px] flex justify-center items-center rounded-tl-lg">
                   <p className="text-[15px] font-sans p-[10px]">

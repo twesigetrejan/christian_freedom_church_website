@@ -14,8 +14,8 @@ const Hero = () => {
           className="object-cover "
         />
       </div>
-      <div className="flex flex-col items-start pb-[52px] ">
-        <h1 className="text-dark font-bold text-[64px] ">
+      <div className="flex flex-col items-start ">
+        <h1 className="text-dark font-bold text-[64px] font-Montserrat">
           Become part of something great
         </h1>
 
