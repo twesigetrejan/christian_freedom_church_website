@@ -23,9 +23,9 @@ const Values = () => {
             return (
               <div
                 key={valueProp.id}
-                className="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-lg transition-colors duration-200 group"
+                className="flex flex-col items-center text-center p-6 rounded-lg transition-colors duration-200 group"
               >
-                <div className="border-2 border-dark-30 w-20 h-20 rounded-full flex items-center justify-center mb-6 transition-all duration-300 ease-in-out transform group-hover:rotate-[360deg] group-hover:border-purple-500">
+                <div className="border-2 border-dark w-20 h-20 rounded-full flex items-center justify-center mb-6 transition-all duration-300 ease-in-out transform group-hover:rotate-[360deg] group-hover:border-purple-500">
                   <IconComponent
                     className="w-5 h-5 text-secondary"
                     strokeWidth={1.5}

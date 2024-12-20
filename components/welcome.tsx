@@ -32,25 +32,7 @@ const WelcomeMessage = () => {
   return (
     <div className="flex justify-center items-center gap-20 px-[60px]">
       {/* content section */}
-      <div className="py-[117px] flex flex-col items-start">
-        <h2 className="pb-8 font-Montserrat text-[40px] font-semibold w-[580px] h-auto text-dark">
-          Welcome to Christian Freedom Church!
-        </h2>
-        <div className="flex flex-col gap-4 pb-8 max-w-[496px]">
-          <p className="text-xl">
-            Join a community where we uplift, support and grow together in faith
-            Welcome to freedom!
-          </p>
-          <p className="text-xl">
-            Our doors are open, our hearts are full, and our mission is clear:
-            to share God's love and walk in his freedom.
-          </p>
-        </div>
-        <button className="btn flex items-center">
-          Join us
-          <ArrowRight className="w-4 h-4 ml-2" />
-        </button>
-      </div>
+
       {/* video section */}
       <div className="relative w-[500px] h-[500px] rounded-2xl">
         {isPlaying ? (
@@ -74,6 +56,25 @@ const WelcomeMessage = () => {
             />
           </div>
         )}
+      </div>
+      <div className="py-[117px] flex flex-col items-start">
+        <h2 className="pb-8 font-Montserrat text-[40px] font-semibold w-[580px] h-auto text-dark">
+          Welcome to Christian Freedom Church!
+        </h2>
+        <div className="flex flex-col gap-4 pb-8 max-w-[496px]">
+          <p className="text-xl">
+            Join a community where we uplift, support and grow together in faith
+            Welcome to freedom!
+          </p>
+          <p className="text-xl">
+            Our doors are open, our hearts are full, and our mission is clear:
+            to share God's love and walk in his freedom.
+          </p>
+        </div>
+        <button className="btn flex items-center">
+          Join us
+          <ArrowRight className="w-4 h-4 ml-2" />
+        </button>
       </div>
     </div>
   );
