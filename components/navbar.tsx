@@ -32,13 +32,13 @@ const Navbar = () => {
       >
         <div
           className={`flex items-center transition-all duration-1000 ${
-            isScrolled ? "gap-3 justify-center" : "gap-[44px] justify-between"
+            isScrolled ? "gap-3 justify-between" : "gap-[44px] justify-between"
           }`}
         >
           {/* Logo */}
           <div
             className={`transition-all duration-1000 ${
-              isScrolled ? "w-10 mr-[420px]" : "w-16"
+              isScrolled ? "w-10 " : "w-16"
             }`}
           >
             <Logo />
@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div
             className={`flex items-center transition-all duration-1000 ${
-              isScrolled ? "text-[15px] gap-2" : "text-base gap-[44px]"
+              isScrolled ? "text-[15px] gap-2" : "text-base gap-4 "
             }`}
           >
             {navlinks &&
@@ -68,7 +68,7 @@ const Navbar = () => {
           <div
             className={`rounded transition-all duration-1000 ${
               isScrolled
-                ? "bg-primary px-2 py-1 text-xs ml-[420px]"
+                ? "bg-primary px-2 py-1 text-xs "
                 : "bg-primary px-5 py-[6px] text-base ml-10"
             } text-white hover:text-primary hover:bg-white`}
           >
