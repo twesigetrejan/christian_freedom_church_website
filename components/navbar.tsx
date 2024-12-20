@@ -41,7 +41,9 @@ const Navbar = () => {
               isScrolled ? "w-10 " : "w-16"
             }`}
           >
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
           </div>
 
           {/* Navigation Links */}
@@ -55,7 +57,7 @@ const Navbar = () => {
                 <Link
                   key={navlink.id}
                   href={navlink.route}
-                  className="transition-all duration-1000"
+                  className="transition-all duration-300  hover:text-secondary hover:border-b-[1px] hover:border-secondary"
                 >
                   <p className={isScrolled ? "px-2" : "px-3"}>
                     {navlink.title}
@@ -66,13 +68,13 @@ const Navbar = () => {
 
           {/* Donate Button */}
           <div
-            className={`rounded transition-all duration-1000 ${
+            className={` btn1 rounded transition-all duration-200 ${
               isScrolled
-                ? "bg-primary px-2 py-1 text-xs "
-                : "bg-primary px-5 py-[6px] text-base ml-10"
-            } text-white hover:text-primary hover:bg-white`}
+                ? "bg-primary px-2 text-xs "
+                : "bg-primary px-5 text-base ml-10"
+            } text-white  hover:scale-110 `}
           >
-            <button>Donate</button>
+            <button className="">Donate</button>
           </div>
         </div>
       </div>

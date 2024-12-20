@@ -5,10 +5,10 @@
 @tailwind utilities;
 /* Button styles */
 .btn {
-  --color: #663398;
-  --color2: #ffff;
+  --color: #cc00ff;
+  --color2: #ffffff;
   --color3: #000000;
-  padding: 1em 1.25em;
+  padding: 0.75em 1.15em;
   background-color: transparent;
   border-radius: 16px;
   border: 0.3px solid var(--color3);
@@ -58,6 +58,63 @@
 }
 
 .btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+.btn1 {
+  --color: #cc00ff;
+  --color2: #ffffff;
+  --color3: #000000;
+  padding: 0.4em 1.25em;
+  background-color: var(--color);
+  border-radius: 14px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+
+  color: var(--color2);
+}
+
+.btn1::after,
+.btn1::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn1::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn1:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn1:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn1:hover {
+  color: var(--color2);
+}
+
+.btn1:active {
   filter: brightness(0.7);
   transform: scale(0.98);
 }

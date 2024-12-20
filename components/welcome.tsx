@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowRight, Play, PlayCircle } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
 
 const WelcomeMessage = () => {
   const [isPlaying, setisPlaying] = useState(false);
   const Video = () => {
     return (
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full rounded-2xl overflow-hidden">
         <video
-          className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+          className="absolute inset-0 w-full h-full object-cover"
           controls
           poster="Images/welcome.jpg"
           preload="none"
@@ -34,7 +34,7 @@ const WelcomeMessage = () => {
       {/* content section */}
 
       {/* video section */}
-      <div className="relative w-[500px] h-[500px] rounded-2xl">
+      <div className="relative w-[500px] h-[500px] rounded-2xl overflow-hidden">
         {isPlaying ? (
           <Video />
         ) : (
