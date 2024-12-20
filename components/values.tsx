@@ -5,16 +5,18 @@ import { ValuesProps } from "@/contants";
 const Values = () => {
   return (
     <Container>
-      <div className="py-16">
-        <div className="max-w-2xl mx-auto text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Our Values</h1>
+      <div className=" flex flex-col gap-10">
+        <div className="max-w-2xl mx-auto text-center pt-[52px]">
+          <h1 className="text-4xl font-bold mb-4 font-Montserrat text-dark ">
+            Our Values
+          </h1>
           <p className="text-lg text-gray-600">
             Timeless guiding principles that reflect our faith, shape our
             mission and inspire us to serve with love and purpose
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-[52px]">
           {ValuesProps?.map((valueProp) => {
             const IconComponent = valueProp.icon;
 
