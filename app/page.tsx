@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import ServiceSection from "@/components/service-section";
+import Values from "@/components/values";
 import WelcomeMessage from "@/components/welcome";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WelcomeMessage />
       <ServiceSection />
+      <Values />
     </div>
   );
 }
