@@ -35,7 +35,7 @@ const Navbar = () => {
             isScrolled ? "gap-3 justify-between" : "gap-[44px] justify-between"
           }`}
         >
-          {/* Logo */}
+  
           <div
             className={`transition-all duration-1000 ${
               isScrolled ? "w-10 " : "w-16"
@@ -46,10 +46,9 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Navigation Links */}
           <div
             className={`flex items-center transition-all duration-1000 ${
-              isScrolled ? "text-[15px] gap-2" : "text-base gap-4 "
+              isScrolled ? "text-[14px] gap-2" : "text-sm gap-4 "
             }`}
           >
             {navlinks &&
@@ -66,7 +65,6 @@ const Navbar = () => {
               ))}
           </div>
 
-          {/* Donate Button */}
           <div
             className={` btn1 rounded transition-all duration-200 ${
               isScrolled
@@ -79,7 +77,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Spacer to prevent content overlap */}
       <div className={isScrolled ? "h-[30px]" : "h-[72px]"} />
     </>
   );
