@@ -27,13 +27,13 @@ const Values = () => {
               >
                 <div className="border-2 border-dark w-20 h-20 rounded-full flex items-center justify-center mb-6 transition-all duration-300 ease-in-out transform group-hover:rotate-[360deg] group-hover:border-purple-500">
                   <IconComponent
-                    className="w-5 h-5 text-secondary"
+                    className="w-6 h-6 text-secondary"
                     strokeWidth={1.5}
                   />
                 </div>
 
                 <div className="space-y-3">
-                  <h3 className="text-[15px] font-bold font-sans">
+                  <h3 className="text-[16px] font-bold font-sans">
                     {valueProp.value}
                   </h3>
                   <p className="text-dark leading-relaxed text-[14px]">
