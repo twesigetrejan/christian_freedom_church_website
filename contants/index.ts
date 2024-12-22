@@ -1,13 +1,4 @@
-import {
-  Church,
-  Facebook,
-  HandHelping,
-  Inspect,
-  Instagram,
-  TrendingUp,
-  Users,
-  Youtube,
-} from "lucide-react";
+import { Church, HandHelping, TrendingUp, Users } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 // Interfaces

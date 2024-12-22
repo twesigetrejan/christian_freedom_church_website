@@ -26,7 +26,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <nav className="flex gap-4 justify-end text-2xl">
+    <nav className="flex  justify-end text-[14px] gap-6">
       {links.map(({ id, icon, route }) => (
         <Link
           key={id}
