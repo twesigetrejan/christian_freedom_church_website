@@ -51,7 +51,7 @@ const WelcomeMessage = () => {
               <Image
                 src={"/Images/welcome.jpg"}
                 alt={"Sunday second service welcome message"}
-                width={500}
+                width={400}
                 height={400}
                 className="w-full object-cover object-center rounded-md h-[400px]"
               />
