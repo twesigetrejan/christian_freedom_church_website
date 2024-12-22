@@ -1,4 +1,13 @@
-import { Church, HandHelping, TrendingUp, Users } from "lucide-react";
+import {
+  Church,
+  Facebook,
+  HandHelping,
+  Inspect,
+  Instagram,
+  TrendingUp,
+  Users,
+  Youtube,
+} from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 // Interfaces
@@ -99,5 +108,32 @@ export const ValuesProps: ValueProp[] = [
     value: "A place for everyone",
     value_explanation: "Drawing the youth towards church community",
     icon: Church,
+  },
+];
+
+export const socialLinks: socialLink[] = [
+  {
+    id: 0,
+    linkname: "YouTube",
+    icon: Youtube,
+    route: "/",
+  },
+  {
+    id: 1,
+    linkname: "Facebook",
+    icon: Facebook,
+    route: "/",
+  },
+  {
+    id: 2,
+    linkname: "Instagram",
+    icon: Instagram,
+    route: "/",
+  },
+  {
+    id: 3,
+    linkname: "Tiktok",
+    icon: Youtube,
+    route: "/",
   },
 ];
