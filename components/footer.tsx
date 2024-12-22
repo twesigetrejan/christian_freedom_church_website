@@ -1,7 +1,7 @@
 import Container from "@/components/container";
 import { navlinks } from "@/contants";
 import Link from "next/link";
-import socialLinks from "@/contants";
+import SocialLinks from "./social-links";
 const Footer = () => {
   return (
     <Container>
@@ -33,16 +33,8 @@ const Footer = () => {
             <p className="">Location : Kawempe-Tula Road</p>
             <p className="">Email : cfcministriesug@gmail.com </p>
             <p className="">Phone : +256 752 569228</p>
-            <div className="flex gap-6">{
-                socialLinks && socialLinks.map(socialLink)=>(
-                    <Link className="" href={socialLink.route}>
-
-                    <p className="" key={socialLink.id}>
-                        {socialLink.icon}
-                    </p>
-
-                    </Link>
-                )}
+            <div className="flex gap-6">
+                <SocialLinks/>
 
             </div>
           </div>

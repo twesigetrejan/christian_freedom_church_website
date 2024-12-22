@@ -110,30 +110,3 @@ export const ValuesProps: ValueProp[] = [
     icon: Church,
   },
 ];
-
-export const socialLinks: socialLink[] = [
-  {
-    id: 0,
-    linkname: "YouTube",
-    icon: Youtube,
-    route: "/",
-  },
-  {
-    id: 1,
-    linkname: "Facebook",
-    icon: Facebook,
-    route: "/",
-  },
-  {
-    id: 2,
-    linkname: "Instagram",
-    icon: Instagram,
-    route: "/",
-  },
-  {
-    id: 3,
-    linkname: "Tiktok",
-    icon: Youtube,
-    route: "/",
-  },
-];
