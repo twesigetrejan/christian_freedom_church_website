@@ -21,7 +21,7 @@ const SocialLinks = () => {
         "https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbnZhYTl0TnJ1N0x5Q1hGa3lvYWR6VkdZVXdKd3xBQ3Jtc0tuY2tWWExmeHZaWWpoUzgtZzNyckpvWUc5OV9XMmJ1NnVuN3JyLVFQZnYxRGIxX3FWQ0NMMHJ4STIyX1Y5X0hpb1ZDTTBaQnAtY2RkWDdpVElBUW5kejNZT3dkZjE0eHIxakRONnZkckdGRjExNUlCZw&q=https%3A%2F%2Fwww.instagram.com%2Fcfcministriesug",
     },
     {
-      id: 3,
+      id: 4,
       icon: <FaTiktok />,
       route:
         "https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbDlTZzNxb2dvOHlRalpKQ2k2eTRyRG12RDg4UXxBQ3Jtc0tsNVpFbmw4SzZQZmU2QnI3aEVqQkJiMjBoVzJiOE0xMXF2NUs4M0pzMFB0RTh5OFIwMGNIVEh5Zk1ObGk3UWdTeWRtdm9kcDV2djNhTGN0S0p6bllOWlUzNUpBTDRCXzNTSmFnR2hucVNMV0ZZV2FwVQ&q=https%3A%2F%2Fwww.tiktok.com%2F%40cfcministries",

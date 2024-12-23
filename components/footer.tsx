@@ -6,7 +6,7 @@ import SocialLinks from "./social-links";
 const Footer = () => {
   // Filter out Contact and About links
   const filteredNavlinks = navlinks.filter(
-    (link) => !["Contact", "About"].includes(link.title)
+    (link) => !["Contact", "About"].includes(link.title, link.id)
   );
 
   return (
