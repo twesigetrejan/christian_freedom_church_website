@@ -66,7 +66,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={` btn1 rounded transition-all duration-200 ${
+            className={` btn1 rounded transition-all duration-100 ${
               isScrolled
                 ? "bg-primary px-2 text-xs "
                 : "bg-primary px-5 text-base ml-10"
