@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "./logo";
 import { navlinks } from "@/contants";
 import Link from "next/link";
+import MobileNavigation from "./mobile-nav";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,16 +36,18 @@ const Navbar = () => {
             isScrolled ? "gap-3 justify-between" : "gap-[44px] justify-between"
           }`}
         >
+          {/* Logo Container */}
           <div
             className={`transition-all duration-1000 ${
-              isScrolled ? "w-10 " : "w-16"
-            }`}
+              isScrolled ? "w-10 lg:w-10" : "w-16 lg:w-16"
+            } sm:w-16`}
           >
             <Logo />
           </div>
 
+          {/* Navigation Links */}
           <div
-            className={`flex items-center transition-all duration-1000 ${
+            className={`sm:flex hidden items-center transition-all duration-1000 ${
               isScrolled ? "text-[14px] gap-2" : "text-sm gap-4 "
             }`}
           >
@@ -53,7 +56,7 @@ const Navbar = () => {
                 <Link
                   key={navlink.id}
                   href={navlink.route}
-                  className="transition-all duration-300  hover:text-secondary hover:border-b-[1px] hover:border-secondary"
+                  className="transition-all duration-300 hover:text-secondary hover:border-b-[1px] hover:border-secondary"
                 >
                   <p className={isScrolled ? "px-2" : "px-3"}>
                     {navlink.title}
@@ -62,18 +65,25 @@ const Navbar = () => {
               ))}
           </div>
 
+          {/* Donate Button (for large screens) */}
           <div
-            className={` btn1 rounded transition-all duration-100 ${
+            className={`hidden lg:flex btn1 rounded transition-all duration-100 ${
               isScrolled
                 ? "bg-primary px-2 text-xs "
                 : "bg-primary px-5 text-base ml-10"
-            } text-white  hover:scale-110 `}
+            } text-white hover:scale-110`}
           >
             <button className="">Donate</button>
+          </div>
+
+          {/* Mobile Navigation (for small screens) */}
+          <div className="lg:hidden">
+            <MobileNavigation />
           </div>
         </div>
       </div>
 
+      {/* Spacer for Navbar */}
       <div className={isScrolled ? "h-[30px]" : "h-[72px]"} />
     </>
   );
