@@ -20,7 +20,8 @@ const ServiceSection = () => {
                   src={ServiceCardProp.image}
                   alt="service image"
                   className="object-cover rounded-2xl"
-                  layout="fill"
+                  fill={true}
+                  sizes="(max-width: 320px) 100vw, 320px"
                 />
                 <div className="absolute bottom-0 left-0 bg-primary text-white w-[86px] h-[80px] flex justify-center items-center rounded-tl-lg">
                   <p className="text-[15px] font-sans p-[10px]">

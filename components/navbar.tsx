@@ -35,15 +35,12 @@ const Navbar = () => {
             isScrolled ? "gap-3 justify-between" : "gap-[44px] justify-between"
           }`}
         >
-  
           <div
             className={`transition-all duration-1000 ${
               isScrolled ? "w-10 " : "w-16"
             }`}
           >
-            <Link href={"/"}>
-              <Logo />
-            </Link>
+            <Logo />
           </div>
 
           <div
