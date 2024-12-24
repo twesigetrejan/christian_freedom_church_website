@@ -4,29 +4,35 @@ import Container from "@/components/container";
 
 const Hero = () => {
   return (
-    <Container >
-      <div className="items-center flex justify-center pt-[52px] pb-[60px] w-full">
-        <Image
-          src={"/Images/hero-image.png"}
-          alt={"hero image"}
-          width={1280}
-          height={320}
-          className="object-cover "
-        />
-      </div>
-      <div className="flex flex-col items-start ">
-        <h1 className="text-dark font-bold text-[64px] font-Montserrat">
-          Become part of something great
-        </h1>
+    <Container>
+      <div className="flex flex-col gap-8 w-full">
+        <div className="flex justify-center pt-8 sm:pt-[52px] pb-8 sm:pb-[60px] w-full">
+          <div className="relative w-full h-[200px] sm:h-[320px] rounded-2xl overflow-hidden">
+            <Image
+              src={"/Images/hero-image.png"}
+              alt={"hero image"}
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1280px"
+            />
+          </div>
+        </div>
 
-        <div className="flex justify-center items-center gap-[37px]">
-          <h1 className="text-dark text-[64px] font-bold font-Montserrat">
-            today, cfc welcomes you
+        <div className="flex flex-col items-start gap-4 sm:gap-6 px-4 sm:px-0">
+          <h1 className="text-dark font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-Montserrat leading-tight">
+            Become part of something great
           </h1>
-          <button className="btn flex items-center font-Montserrat">
-            Get started
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </button>
+
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[37px] w-full">
+            <h1 className="text-dark font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-Montserrat leading-tight">
+              today, cfc welcomes you
+            </h1>
+            <button className="btn flex items-center font-Montserrat whitespace-nowrap">
+              Get started
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </button>
+          </div>
         </div>
       </div>
     </Container>

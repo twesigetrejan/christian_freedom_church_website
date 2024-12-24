@@ -75,8 +75,6 @@ const Navbar = () => {
           >
             <button className="">Donate</button>
           </div>
-
-          {/* Mobile Navigation (Visible on Small Screens) */}
           <div
             className={`lg:hidden ${
               isScrolled

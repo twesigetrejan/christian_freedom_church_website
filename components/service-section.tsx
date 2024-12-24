@@ -6,14 +6,14 @@ const ServiceSection = () => {
   return (
     <Container>
       <div className="py-[52px]">
-        <h2 className="pb-10 font-Montserrat text-[40px] font-semibold text-dark flex justify-center">
+        <h2 className="pb-10 font-Montserrat text-[32px] sm:text-[40px] font-semibold text-dark text-center">
           Our Services
         </h2>
-        <div className="grid grid-cols-3 gap-[120px] rounded-2xl relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-[60px] lg:gap-[120px] rounded-2xl relative">
           {ServiceCardProps &&
             ServiceCardProps.map((ServiceCardProp) => (
               <div
-                className="relative h-[400px] w-[320px]"
+                className="relative h-[400px] w-full max-w-[320px] mx-auto"
                 key={ServiceCardProp.id}
               >
                 <Image
@@ -21,7 +21,7 @@ const ServiceSection = () => {
                   alt="service image"
                   className="object-cover rounded-2xl"
                   fill={true}
-                  sizes="(max-width: 320px) 100vw, 320px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute bottom-0 left-0 bg-primary text-white w-[86px] h-[80px] flex justify-center items-center rounded-tl-lg">
                   <p className="text-[15px] font-sans p-[10px]">
