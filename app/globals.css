@@ -118,3 +118,23 @@
   filter: brightness(0.7);
   transform: scale(0.98);
 }
+
+.btn2 {
+  --color: #cc00ff;
+  --color2: #ffffff;
+  --color3: #000000;
+  padding: 0.75em 1.15em;
+  background-color: var(--color2);
+  border-radius: 16px;
+  border: 0.3px solid var(--color2);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+
+  color: var(--color);
+}

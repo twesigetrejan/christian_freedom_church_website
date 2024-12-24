@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "./logo";
 import { navlinks } from "@/contants";
 import Link from "next/link";
-import MobileNavigation from "./mobile-nav";
+import { MobileNavigation } from "./mobile-nav";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
       <div
         className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-0 ${
-          isScrolled ? "py-1 px-5 border-2 " : "py-4 px-10"
+          isScrolled ? "py-1 px-5 border-2" : "py-4 px-10"
         } bg-opacity-90 backdrop-blur-md`}
       >
         <div
@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div
             className={`sm:flex hidden items-center transition-all duration-1000 ${
-              isScrolled ? "text-[14px] gap-2" : "text-sm gap-4 "
+              isScrolled ? "text-[14px] gap-2" : "text-sm gap-4"
             }`}
           >
             {navlinks &&
@@ -65,19 +65,25 @@ const Navbar = () => {
               ))}
           </div>
 
-          {/* Donate Button (for large screens) */}
+          {/* Large Screen Donate Button */}
           <div
             className={`hidden lg:flex btn1 rounded transition-all duration-100 ${
               isScrolled
-                ? "bg-primary px-2 text-xs "
+                ? "bg-primary px-2 text-xs"
                 : "bg-primary px-5 text-base ml-10"
             } text-white hover:scale-110`}
           >
             <button className="">Donate</button>
           </div>
 
-          {/* Mobile Navigation (for small screens) */}
-          <div className="lg:hidden">
+          {/* Mobile Navigation (Visible on Small Screens) */}
+          <div
+            className={`lg:hidden ${
+              isScrolled
+                ? "transition-all duration-500"
+                : "transition-all duration-500"
+            }`}
+          >
             <MobileNavigation />
           </div>
         </div>
