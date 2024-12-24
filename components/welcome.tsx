@@ -69,7 +69,7 @@ const WelcomeMessage = () => {
             </p>
             <p className="text-[16px]">
               Our doors are open, our hearts are full, and our mission is clear:
-              to share God's love and walk in his freedom.
+              to share God&apos;s love and walk in his freedom.
             </p>
           </div>
           <button className="btn flex items-center">
