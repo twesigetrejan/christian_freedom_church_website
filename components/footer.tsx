@@ -1,4 +1,3 @@
-import Container from "@/components/container";
 import { navlinks } from "@/contants";
 import Link from "next/link";
 import SocialLinks from "./social-links";
