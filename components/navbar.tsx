@@ -27,27 +27,25 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-0 ${
-          isScrolled ? "py-1 px-5 border-2" : "py-4 px-10"
+        className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300 ${
+          isScrolled ? "py-1 px-4 sm:px-5 border-b" : "py-4 px-6 sm:px-10"
         } bg-opacity-90 backdrop-blur-md`}
       >
         <div
-          className={`flex items-center transition-all duration-1000 ${
-            isScrolled ? "gap-3 justify-between" : "gap-[44px] justify-between"
+          className={`flex items-center justify-between  transition-all duration-300 ${
+            isScrolled ? "gap-2 sm:gap-3" : "gap-4 sm:gap-[44px]"
           }`}
         >
-          {/* Logo Container */}
           <div
-            className={`transition-all duration-1000 ${
-              isScrolled ? "w-10 lg:w-10" : "w-16 lg:w-16"
-            } sm:w-16`}
+            className={`transition-all duration-300 ${
+              isScrolled ? "w-24 sm:w-36" : "w-28 sm:w-40"
+            }`}
           >
             <Logo />
           </div>
 
-          {/* Navigation Links */}
           <div
-            className={`sm:flex hidden items-center transition-all duration-1000 ${
+            className={`sm:flex hidden items-center transition-all duration-300 ${
               isScrolled ? "text-[14px] gap-2" : "text-sm gap-4"
             }`}
           >
@@ -65,30 +63,24 @@ const Navbar = () => {
               ))}
           </div>
 
-          {/* Large Screen Donate Button */}
           <div
-            className={`hidden lg:flex btn1 rounded transition-all duration-100 ${
+            className={`hidden lg:flex btn1 rounded transition-all duration-300 ${
               isScrolled
                 ? "bg-primary px-2 text-xs"
-                : "bg-primary px-5 text-base ml-10"
+                : "bg-primary px-5 text-base ml-4"
             } text-white hover:scale-110`}
           >
-            <button className="">Donate</button>
+            <button>Donate</button>
           </div>
-          <div
-            className={`lg:hidden ${
-              isScrolled
-                ? "transition-all duration-500"
-                : "transition-all duration-500"
-            }`}
-          >
+
+          <div className="lg:hidden mr-4">
             <MobileNavigation />
           </div>
         </div>
       </div>
 
       {/* Spacer for Navbar */}
-      <div className={isScrolled ? "h-[30px]" : "h-[72px]"} />
+      <div className={isScrolled ? "h-[48px]" : "h-[80px]"} />
     </>
   );
 };
