@@ -53,6 +53,7 @@ const ContactForm = () => {
         type: "error",
         message: "Failed to send message. Please try again.",
       });
+      console.log(error);
     } finally {
       setLoading(false);
     }
