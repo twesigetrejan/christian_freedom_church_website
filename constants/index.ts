@@ -1,4 +1,13 @@
-import { Church, HandHelping, TrendingUp, Users } from "lucide-react";
+import {
+  Church,
+  HandHelping,
+  TrendingUp,
+  Users,
+  Mail,
+  Phone,
+  MapPin,
+  MessageCircleCode,
+} from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 // Interfaces
@@ -18,6 +27,13 @@ interface ValueProp {
   id: number;
   value: string;
   value_explanation: string;
+  icon: LucideIcon;
+}
+
+interface InquireProp {
+  id: number;
+  social_used: string;
+  value: string;
   icon: LucideIcon;
 }
 
@@ -74,7 +90,6 @@ export const ServiceCardProps: ServiceCard[] = [
   },
 ];
 
-// Values Props
 export const ValuesProps: ValueProp[] = [
   {
     id: 0,
@@ -99,5 +114,32 @@ export const ValuesProps: ValueProp[] = [
     value: "A place for everyone",
     value_explanation: "Drawing the youth towards church community",
     icon: Church,
+  },
+];
+
+export const InquireProps: InquireProp[] = [
+  {
+    id: 0,
+    social_used: "Phone number",
+    value: "+256 752 569228",
+    icon: Phone,
+  },
+  {
+    id: 1,
+    social_used: "Email address",
+    value: "cfcministriesug@gmail.com",
+    icon: Mail,
+  },
+  {
+    id: 2,
+    social_used: "Whatsapp",
+    value: "+256 752 569228",
+    icon: MessageCircleCode,
+  },
+  {
+    id: 3,
+    social_used: "Location",
+    value: "Kawempe-Tula Road",
+    icon: MapPin,
   },
 ];

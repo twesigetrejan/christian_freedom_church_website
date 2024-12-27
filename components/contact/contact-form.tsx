@@ -60,13 +60,14 @@ const ContactForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-lg mx-auto">
+    <Card className="w-full max-w-lg mx-auto border-none shadow-2xl">
       <CardHeader>
-        <CardTitle>Contact Us</CardTitle>
+        <CardTitle className="font-Montserrat text-primary  ">Contact Us</CardTitle>
       </CardHeader>
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 ">
           <div>
+            <p className="pb-1">Name</p>
             <Input
               type="text"
               name="name"
@@ -74,10 +75,11 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full"
+              className="w-full rounded-xl text-dark border-dark"
             />
           </div>
           <div>
+            <p className="pb-1">Email</p>
             <Input
               type="email"
               name="email"
@@ -85,17 +87,18 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full"
+              className="w-full rounded-xl text-dark"
             />
           </div>
-          <div>
+          <div className="pb-7">
+            <p className="pb-1">Message</p>
             <Textarea
               name="message"
-              placeholder="Your Message"
+              placeholder="provide your message"
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full min-h-32"
+              className="w-full min-h-32 rounded-xl text-dark"
             />
           </div>
 
@@ -110,7 +113,11 @@ const ContactForm = () => {
             </Alert>
           )}
 
-          <Button type="submit" className="w-full" disabled={loading}>
+          <Button
+            type="submit"
+            className="w-full text-white rounded-xl"
+            disabled={loading}
+          >
             {loading ? "Sending..." : "Send Message"}
           </Button>
         </form>

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { navlinks } from "@/contants";
+import { navlinks } from "@/constants";
 
 export const MobileNavigation = () => {
   return (

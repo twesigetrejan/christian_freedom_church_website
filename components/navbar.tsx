@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Logo from "./logo";
-import { navlinks } from "@/contants";
+import { navlinks } from "@/constants";
 import Link from "next/link";
 import { MobileNavigation } from "./mobile-nav";
 

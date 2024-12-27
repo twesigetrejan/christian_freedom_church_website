@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/container";
-import { ServiceCardProps } from "@/contants";
+import { ServiceCardProps } from "@/constants";
 
 const ServiceSection = () => {
   return (

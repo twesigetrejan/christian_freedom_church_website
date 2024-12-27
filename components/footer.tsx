@@ -1,4 +1,4 @@
-import { navlinks } from "@/contants";
+import { navlinks } from "@/constants";
 import Link from "next/link";
 import SocialLinks from "./social-links";
 
