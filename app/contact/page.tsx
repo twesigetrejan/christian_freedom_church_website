@@ -6,8 +6,9 @@ import Container from "@/components/container";
 export default function Contact() {
   return (
     <Container>
-      <div className="flex flex-col gap-10 mt-20">
-        <div className="flex">
+      
+      <div className="flex flex-col justify-center mt-20">
+        <div className="flex justify-center gap-20 pb-10">
           <ContactForm />
           <Inquiries />
         </div>

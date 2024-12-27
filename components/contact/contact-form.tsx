@@ -60,9 +60,11 @@ const ContactForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-lg mx-auto border-none shadow-2xl">
+    <Card className="w-full max-w-[465px] border-none shadow-2xl">
       <CardHeader>
-        <CardTitle className="font-Montserrat text-primary  ">Contact Us</CardTitle>
+        <CardTitle className="font-Montserrat text-primary  ">
+          Contact Us
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4 ">

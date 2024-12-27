@@ -2,7 +2,7 @@ import { InquireProps } from "@/constants";
 
 const Inquiries = () => {
   return (
-    <div className="max-w-[424px]">
+    <div className="max-w-[424px] px-4">
       <div className="flex flex-col">
         <p className="text-left font-Montserrat pb-8 pt-8 ">
           General Inquiries, Have questions about our services, departments or
