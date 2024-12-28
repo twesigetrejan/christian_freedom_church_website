@@ -16,7 +16,7 @@ export default function Contact() {
         />
       </div>
       <div className="flex flex-col justify-center mt-10">
-        <div className="flex justify-center gap-20 pb-10">
+        <div className="lg:flex justify-center gap-20 pb-10 md:flex">
           <ContactForm />
           <Inquiries />
         </div>
