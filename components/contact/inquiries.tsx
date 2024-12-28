@@ -6,7 +6,7 @@ const Inquiries = () => {
       <div className="flex flex-col">
         <p className="text-left font-Montserrat pb-8 pt-8 ">
           General Inquiries, Have questions about our services, departments or
-          events?<br></br> We're here to help.
+          events?<br></br> We&apos;re here to help.
         </p>
         <div className="grid grid-cols-2 gap-12">
           {InquireProps &&
