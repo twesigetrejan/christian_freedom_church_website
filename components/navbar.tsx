@@ -62,7 +62,7 @@ const Navbar = () => {
                   href={navlink.route}
                   className="transition-all duration-300 hover:text-secondary hover:border-b-[1px] hover:border-secondary"
                 >
-                  <p className={isScrolled ? "px-2" : "px-3"}>
+                  <p className={isScrolled ? "px-2 " : "px-3"}>
                     {navlink.title}
                   </p>
                 </Link>

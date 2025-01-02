@@ -6,7 +6,7 @@ const ServiceSection = () => {
   return (
     <Container>
       <div className="py-[52px]">
-        <h2 className="pb-10 font-Montserrat text-[32px] sm:text-[40px]  font-semibold text-dark text-center">
+        <h2 className="pb-10 font-Montserrat text-h2 sm:text-h1  font-semibold  text-center">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-[60px] lg:gap-[120px] rounded-2xl relative">
@@ -24,7 +24,7 @@ const ServiceSection = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute bottom-0 left-0 bg-primary text-white w-[86px] h-[80px] flex justify-center items-center rounded-tl-lg">
-                  <p className="text-[15px] font-sans p-[10px]">
+                  <p className="text-p2 font-sans p-[10px]">
                     {ServiceCardProp.schedule}
                   </p>
                 </div>
