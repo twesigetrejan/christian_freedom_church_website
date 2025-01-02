@@ -70,7 +70,7 @@ const Navbar = () => {
                 : "bg-primary px-5 text-base ml-4"
             } text-white hover:scale-110`}
           >
-            <button>Donate</button>
+            <button>Give</button>
           </div>
 
           <div className="lg:hidden mr-4">
