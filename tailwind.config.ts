@@ -14,10 +14,10 @@ export default {
         h1: "2.5rem", // 40px
         h2: "2rem", // 32px
         h3: "1.25rem", // 20px
-        
+
         p1: "1rem", // 16px
         p2: "0.875rem", // 14px
-        p3: "0.625rem", // 10px
+        p3: "0.75rem", // 10px
       },
       colors: {
         primary: "#AF52DE",

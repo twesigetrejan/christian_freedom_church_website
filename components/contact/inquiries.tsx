@@ -4,7 +4,7 @@ const Inquiries = () => {
   return (
     <div className="max-w-[424px] px-4">
       <div className="flex flex-col">
-        <p className="text-left font-Montserrat pb-8 pt-8 ">
+        <p className="text-left text-p1 pb-8 pt-8 ">
           General Inquiries, Have questions about our services, departments or
           events?<br></br> We&apos;re here to help.
         </p>
@@ -19,10 +19,10 @@ const Inquiries = () => {
                 >
                   <IconComponent className="stroke-primary w-11 h-11 p-2 " />
                   <div className="flex flex-col items-center justify-center ">
-                    <p className="text-[16px] font-sans">
+                    <p className="text-p2 font-sans">
                       {InquireProp.social_used}
                     </p>
-                    <p className="text-[12px]">{InquireProp.value}</p>
+                    <p className="text-p3">{InquireProp.value}</p>
                   </div>
                 </div>
               );

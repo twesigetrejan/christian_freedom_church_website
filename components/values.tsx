@@ -7,7 +7,7 @@ const Values = () => {
     <Container>
       <div className=" flex flex-col gap-10">
         <div className="max-w-2xl mx-auto text-center pt-[52px]">
-          <h1 className="text-h1 font-bold mb-4 font-Montserrat  text-clip">
+          <h1 className="text-h1 font-bold mb-4  text-clip">
             Our Values
           </h1>
           <p className="text-p1">

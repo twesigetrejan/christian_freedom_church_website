@@ -62,14 +62,12 @@ const ContactForm = () => {
   return (
     <Card className="w-full max-w-[465px] border-none shadow-2xl sm:px-0 sm:w-full">
       <CardHeader>
-        <CardTitle className="font-Montserrat text-primary  ">
-          Contact Us
-        </CardTitle>
+        <CardTitle className="text-primary  ">Contact us</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4 ">
           <div>
-            <p className="pb-1">Name</p>
+            <p className="pb-1 text-p1">Name</p>
             <Input
               type="text"
               name="name"
@@ -77,11 +75,11 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full rounded-xl text-dark border-dark"
+              className="w-full rounded-xl text-dark border-dark text-p2"
             />
           </div>
           <div>
-            <p className="pb-1">Email</p>
+            <p className="pb-1 text-p1">Email</p>
             <Input
               type="email"
               name="email"
@@ -89,18 +87,18 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full rounded-xl text-dark"
+              className="w-full rounded-xl text-dark text-p2"
             />
           </div>
           <div className="pb-7">
-            <p className="pb-1">Message</p>
+            <p className="pb-1 text-p1">Message</p>
             <Textarea
               name="message"
               placeholder="provide your message"
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full min-h-32 rounded-xl text-dark"
+              className="w-full min-h-32 rounded-xl text-dark text-p2"
             />
           </div>
 
