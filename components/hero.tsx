@@ -1,8 +1,16 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Container from "@/components/container";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter();
+
+  const JoinUs = () => {
+    router.push("/contact");
+  };
   return (
     <Container>
       <div className="flex flex-col gap-8 w-full">
@@ -28,7 +36,10 @@ const Hero = () => {
             <h1 className="text-dark font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-Montserrat leading-tight">
               today, cfc welcomes you
             </h1>
-            <button className="btn flex items-center font-Montserrat whitespace-nowrap">
+            <button
+              onClick={JoinUs}
+              className="btn flex items-center font-Montserrat whitespace-nowrap"
+            >
               Get started
               <ArrowRight className="w-4 h-4 ml-2" />
             </button>

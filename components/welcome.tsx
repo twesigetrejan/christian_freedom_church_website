@@ -3,10 +3,15 @@ import Container from "@/components/container";
 import React, { useState } from "react";
 import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const WelcomeMessage = () => {
+  const router = useRouter();
   const [isPlaying, setisPlaying] = useState(false);
 
+  const JoinUs = () => {
+    router.push("/contact");
+  };
   const Video = () => {
     return (
       <div className="relative w-full h-full rounded-2xl overflow-hidden">
@@ -73,7 +78,7 @@ const WelcomeMessage = () => {
               to share God&apos;s love and walk in his freedom.
             </p>
           </div>
-          <button className="btn flex items-center">
+          <button onClick={JoinUs} className="btn flex items-center">
             Join us
             <ArrowRight className="w-4 h-4 ml-2" />
           </button>

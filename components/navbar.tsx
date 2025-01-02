@@ -52,7 +52,7 @@ const Navbar = () => {
 
           <div
             className={`sm:flex hidden items-center transition-all duration-300 ${
-              isScrolled ? "text-[14px] gap-2" : "text-sm gap-4"
+              isScrolled ? "text-p2 gap-4" : "text-sm gap-4"
             }`}
           >
             {navlinks &&
