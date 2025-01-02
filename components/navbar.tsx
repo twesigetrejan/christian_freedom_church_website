@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`hidden lg:flex btn1 rounded transition-all duration-300 ${
+            className={`hidden lg:flex btn1 transition-all duration-300 ${
               isScrolled
                 ? "bg-primary px-2 text-xs"
                 : "bg-primary px-5 text-base ml-4"

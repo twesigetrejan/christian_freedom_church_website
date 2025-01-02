@@ -53,7 +53,7 @@ export const navlinks: NavLink[] = [
   {
     id: 2,
     title: "Events",
-    route: "/",
+    route: "/events",
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const navlinks: NavLink[] = [
   {
     id: 4,
     title: "About",
-    route: "",
+    route: "/about",
   },
 ];
 
