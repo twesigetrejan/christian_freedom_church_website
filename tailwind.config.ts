@@ -10,6 +10,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        h1: "2.5rem", // 40px
+        h2: "2rem", // 32px
+        h3: "1.25rem", // 20px
+        
+        p1: "1rem", // 16px
+        p2: "0.875rem", // 14px
+        p3: "0.625rem", // 10px
+      },
       colors: {
         primary: "#AF52DE",
         secondary: "#663398",
@@ -51,7 +60,6 @@ export default {
       },
       fontFamily: {
         sans: ['"Open Sans"', "sans-serif"],
-        Montserrat: ['"Montserrat"', "sans-serif"] 
       },
       borderRadius: {
         lg: "var(--radius)",
