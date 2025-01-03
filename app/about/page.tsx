@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import MissionVision from "@/components/about/mission-vision";
 import TeamGrid from "@/components/about/teamCard";
@@ -10,6 +10,7 @@ export const About = () => {
     <div className="py-10 flex flex-col gap-10 items-center justify-center">
       <div className="relative w-full">
         <Image
+          layout="responsive"
           height={345}
           width={1280}
           className="object-cover"
