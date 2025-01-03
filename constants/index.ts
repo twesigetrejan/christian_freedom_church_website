@@ -140,13 +140,14 @@ export const InquireProps: InquireProp[] = [
   },
 ];
 
-interface LeadershipTeam {
+export interface LeadershipTeam {
   id: number;
   leaderName: string;
   title: string;
   img: string;
 }
-[] = [
+
+export const leadershipTeam: LeadershipTeam[] = [
   {
     id: 0,
     leaderName: "Pastor Jjuuko Musisi",

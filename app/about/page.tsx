@@ -1,7 +1,9 @@
+"use client"
 import Image from "next/image";
 import MissionVision from "@/components/about/mission-vision";
-import { Leadership } from "@/components/about/leadership";
+import TeamGrid from "@/components/about/teamCard";
 import MinistryLeadership from "@/components/about/ministry-leadership";
+import { JoinCfc } from "@/components/about/joinUs";
 
 export const About = () => {
   return (
@@ -16,8 +18,12 @@ export const About = () => {
         />
       </div>
       <MissionVision />
-      {/* <Leadership /> */}
+
       <MinistryLeadership />
+
+      <TeamGrid />
+
+      <JoinCfc />
     </div>
   );
 };
