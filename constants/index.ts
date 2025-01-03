@@ -139,3 +139,48 @@ export const InquireProps: InquireProp[] = [
     icon: MapPin,
   },
 ];
+
+interface LeadershipTeam {
+  id: number;
+  leaderName: string;
+  title: string;
+  img: string;
+}
+[] = [
+  {
+    id: 0,
+    leaderName: "Pastor Jjuuko Musisi",
+    title: "Lead Pastor",
+    img: "/Images/leadpastor.png",
+  },
+  {
+    id: 1,
+    leaderName: "Birungi Esther",
+    title: "Choir leader",
+    img: "/Images/choirleader.png",
+  },
+  {
+    id: 2,
+    leaderName: "Kibirige Joseph",
+    title: "Media team lead",
+    img: "/Images/medialeader.png",
+  },
+  {
+    id: 3,
+    leaderName: "Jane Doe",
+    title: "Women’s lead",
+    img: "/Images/womenlead.png",
+  },
+  {
+    id: 4,
+    leaderName: "Jjuuko Isaac",
+    title: "Socials Manager",
+    img: "/Images/socialsmanager.png",
+  },
+  {
+    id: 5,
+    leaderName: "John Doe",
+    title: "Men's lead",
+    img: "/Images/menslead.png",
+  },
+];
