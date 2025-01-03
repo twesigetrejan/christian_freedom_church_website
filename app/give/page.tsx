@@ -7,10 +7,10 @@ export const Give = () => {
         <Image
           src="/Images/give/give-hero.png"
           alt="About Hero Image"
-          layout="responsive"
-          width={1280}
+          layout=""
+          width={1200}
           height={345}
-          className="object-cover"
+          className="object-cover rounded-2xl"
         />
       </div>
 
@@ -32,7 +32,7 @@ export const Give = () => {
               src="/Images/give/mtn.png"
               alt="mtn logo"
             />
-            <p className="text-p1 text-blue-600">+256 752 566 228</p>
+            <p className="text-dark text-p1">+256 752 566 228</p>
           </div>
 
           <div className="flex flex-col gap-5 items-center justify-center">
@@ -43,7 +43,7 @@ export const Give = () => {
               src="/Images/give/airtel.png"
               alt="airtel logo"
             />
-            <p className="text-p1 text-red-600">+256 752 566 228</p>
+            <p className="text-dark text-p1">+256 752 566 228</p>
           </div>
         </div>
       </div>

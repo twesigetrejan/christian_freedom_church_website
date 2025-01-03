@@ -62,7 +62,9 @@ const ContactForm = () => {
   return (
     <Card className="w-full max-w-[465px] border-none shadow-2xl sm:px-0 sm:w-full">
       <CardHeader>
-        <CardTitle className="text-primary  ">Contact us</CardTitle>
+        <CardTitle className="text-primary ">
+          <h3 className="text-h3">Contact us</h3>
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4 ">

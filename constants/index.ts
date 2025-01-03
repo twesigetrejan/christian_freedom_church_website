@@ -172,14 +172,28 @@ export const leadershipTeam: LeadershipTeam[] = [
     title: "Women’s lead",
     img: "/Images/womenlead.png",
   },
+
   {
     id: 4,
     leaderName: "Jjuuko Isaac",
     title: "Socials Manager",
     img: "/Images/socialsmanager.png",
   },
+
   {
     id: 5,
+    leaderName: "Keyla Smith",
+    title: "Assistant choir lead",
+    img: "/Images/assistantchoirlead.png",
+  },
+  {
+    id: 6,
+    leaderName: "Jordan Mwesigwa",
+    title: "Entertainment lead",
+    img: "/Images/entertainmentlead.png",
+  },
+  {
+    id: 7,
     leaderName: "John Doe",
     title: "Men's lead",
     img: "/Images/menslead.png",

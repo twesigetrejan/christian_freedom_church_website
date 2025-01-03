@@ -65,15 +65,15 @@ const WelcomeMessage = () => {
 
         {/* content section */}
         <div className="py-8 md:py-[117px] flex flex-col items-start">
-          <h2 className="pb-6 md:pb-8 font-Montserrat text-2xl md:text-h2 font-semibold max-w-full md:max-w-[580px] ">
+          <h3 className="pb-6 md:pb-8  md:text-h3 font-semibold max-w-full md:max-w-[580px] ">
             Welcome to Christian Freedom Church!
-          </h2>
+          </h3>
           <div className="flex flex-col gap-4 pb-6 md:pb-8 max-w-full md:max-w-[496px] text-dark">
-            <p className="text-base">
+            <p className="text-p1">
               Join a community where we uplift, support and grow together in
               faith Welcome to freedom!
             </p>
-            <p className="text-base">
+            <p className="text-p1">
               Our doors are open, our hearts are full, and our mission is clear:
               to share God&apos;s love and walk in his freedom.
             </p>

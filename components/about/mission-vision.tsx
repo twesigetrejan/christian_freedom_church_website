@@ -15,7 +15,7 @@ export const MissionVision = () => {
         {/* Image section */}
         <div>
           <Image
-            src={"/Images/about/mission.png"}
+            src={"/Images/about/mission2.png"}
             width={350}
             height={330}
             alt="Mission Image"
@@ -27,7 +27,7 @@ export const MissionVision = () => {
         {/* Image section */}
         <div>
           <Image
-            src={"/Images/about/mission.png"}
+            src={"/Images/about/vision2.png"}
             width={350}
             height={330}
             alt="Mission Image"

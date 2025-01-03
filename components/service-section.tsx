@@ -6,9 +6,9 @@ const ServiceSection = () => {
   return (
     <Container>
       <div className="py-[52px]">
-        <h2 className="pb-10 font-Montserrat text-h2 sm:text-h1  font-semibold  text-center">
+        <h3 className="pb-10 md:text-h3 sm:text-h1  font-semibold  text-center">
           Our Services
-        </h2>
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-[60px] lg:gap-[120px] rounded-2xl relative">
           {ServiceCardProps &&
             ServiceCardProps.map((ServiceCardProp) => (
