@@ -199,3 +199,84 @@ export const leadershipTeam: LeadershipTeam[] = [
     img: "/Images/menslead.png",
   },
 ];
+
+export interface UpcomingEvents {
+  id: number;
+  eventName: string;
+  details: string;
+  eventDay: string;
+  month: string;
+  dayOfMonth: string;
+  eventTime: string;
+  img: string;
+}
+
+export const upcomingEvents: UpcomingEvents[] = [
+  {
+    id: 0,
+    eventName: "Good Friday celebrations",
+    details:
+      "Join us for a solemn and Good Friday service as we remember the sacrifice of Jesus Christ on the cross. This day calls us to honor the love and grace shown to us through His ultimate act of selflessness",
+    eventDay: "Friday",
+    month: "April",
+    dayOfMonth: "18",
+    eventTime: "5:00PM - 8:00PM",
+    img: "/Images/events/good-friday.png",
+  },
+  {
+    id: 0,
+    eventName: "Easter holy days celebrations",
+    details:
+      "This special event is a time to reflect on the hope and renewal brought by the resurrection of Jesus Christ. Gather with us as we worship, connect, and share the message of love and salvation",
+    eventDay: "Sunday",
+    month: "April",
+    dayOfMonth: "20",
+    eventTime: "7:00AM - 5:00PM",
+    img: "/Images/events/easter.png",
+  },
+];
+
+export interface EventHighlights {
+  id: number;
+  eventName: string;
+  details: string;
+  img: string;
+}
+
+export const eventHighlights: EventHighlights[] = [
+  {
+    id: 0,
+    eventName: "New year’s eve overnight",
+    details:
+      "Our New Year’s Eve overnight celebration was a powerful and unforgettable experience as we gathered to dedicate the year ahead to his guidance",
+    img: "/Images/events/overnight.png",
+  },
+  {
+    id: 1,
+    eventName: "Christmas celebrations",
+    details:
+      "Our Christmas Celebration was a heartwarming evening filled with worship, community, and the true spirit of Christmas",
+    img: "/Images/events/xmas.png",
+  },
+  {
+    id: 2,
+    eventName: "Children's fun day ",
+    details:
+      "Our Children’s Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
+    img: "/Images/events/children.png",
+  },
+  {
+    id: 3,
+    eventName: "Children's fun day ",
+    details:
+      "Our Children’s Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
+    img: "/Images/events/children.png",
+  },
+  {
+    id: 4,
+    eventName: "Children's fun day ",
+    details:
+      "Our Children’s Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
+    img: "/Images/events/children.png",
+  },
+];

@@ -8,8 +8,8 @@ import Container from "@/components/container";
 export const About = () => {
   return (
     <Container>
-      <div className="py-10 flex flex-col gap-10 items-center justify-center">
-        <div className="max-w-[1200px]">
+      <div className="py-10 flex flex-col items-center justify-center">
+        <div className="max-w-[1200px] pb-10">
           <Image
             layout=""
             height={345}

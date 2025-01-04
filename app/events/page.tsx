@@ -5,7 +5,7 @@ import { UpcomingEvents } from "@/components/events/upcomingEvents";
 import { EventHighlights } from "@/components/events/eventHighlights";
 export default function Events() {
   return (
-    <Container>
+  
       <div className="py-10 flex flex-col gap-10 items-center justify-center">
         <div className="max-w-[1200px]">
           <Image
@@ -21,6 +21,5 @@ export default function Events() {
         <EventHighlights />
         <JoinCfc />
       </div>
-    </Container>
   );
 }
