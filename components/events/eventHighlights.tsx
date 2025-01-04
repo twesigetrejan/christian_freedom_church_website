@@ -11,7 +11,7 @@ import {
 export const EventHighlights = () => {
   return (
     <div className="w-full max-w-[1200px] mx-auto relative">
-      <h3 className="font-semibold text-center mb-10 text-p1">
+      <h3 className="font-semibold text-center mb-10 text-h2">
         Events highlights
       </h3>
 
@@ -34,7 +34,7 @@ export const EventHighlights = () => {
                     alt={highlight.eventName}
                     width={300}
                     height={300}
-                    className="object-cover rounded-lg w-full aspect-square"
+                    className="object-cover w-full aspect-square"
                   />
                   <h4 className="mt-4 font-semibold text-p2">
                     {highlight.eventName}

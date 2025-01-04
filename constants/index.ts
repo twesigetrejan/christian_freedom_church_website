@@ -224,7 +224,7 @@ export const upcomingEvents: UpcomingEvents[] = [
     img: "/Images/events/good-friday.png",
   },
   {
-    id: 0,
+    id: 1,
     eventName: "Easter holy days celebrations",
     details:
       "This special event is a time to reflect on the hope and renewal brought by the resurrection of Jesus Christ. Gather with us as we worship, connect, and share the message of love and salvation",
