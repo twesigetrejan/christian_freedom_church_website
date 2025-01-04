@@ -15,7 +15,7 @@ export const UpcomingEvents = () => {
 
   return (
     <Container>
-      <div className="pt-10 flex flex-col gap-10">
+      <div className="pt-10 flex flex-col gap-10 pb-10">
         <h3 className="font-semibold text-center text-h2">Upcoming events</h3>
         <div className="flex flex-col gap-10">
           {upcomingEvents &&
