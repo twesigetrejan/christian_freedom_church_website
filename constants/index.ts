@@ -280,3 +280,144 @@ export const eventHighlights: EventHighlights[] = [
     img: "/Images/events/children.png",
   },
 ];
+
+export interface Session {
+  id: number;
+  sessionName: string;
+  sessionDetails: string;
+}
+
+
+export interface DepartmentServices {
+  id: number;
+  service_name: string;
+  times: string[];
+  sessions: Session[];
+}
+
+export const departmentServices: DepartmentServices[] = [
+  {
+    id: 0,
+    service_name: "Sunday services",
+    times: ["7:00AM", "11:00AM", "5:00PM"],
+    sessions: [
+      {
+        id: 0,
+        sessionName: "Morning service",
+        sessionDetails:
+          "A quiet, reflective time to start your day in worship and prayer.The earliest bird catches the worm",
+      },
+      {
+        id: 1,
+        sessionName: "Main service",
+        sessionDetails:
+          "Our central service with powerful worship, a timely message, and community connection",
+      },
+      {
+        id: 2,
+        sessionName: "Main service",
+        sessionDetails:
+          " After the Main Service, men’s meeting followed by youth fellowship to deepen relationships and spiritual growth.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    service_name: "Bible Study & deliverance",
+    times: ["5:00PM"],
+    sessions: [
+      {
+        id: 0,
+        sessionName: "Midweek session",
+        sessionDetails:
+          "A deep dive into scripture with discussions to enrich your faith on Wednesday",
+      },
+      {
+        id: 1,
+        sessionName: "Friday session",
+        sessionDetails:
+          "A powerful evening of prayer, teaching, and deliverance for spiritual renewal",
+      },
+      {
+        id: 2,
+        sessionName: "Special study workshops",
+        sessionDetails:
+          "As scheduled - Tailored Bible sessions that offer practical applications and spiritual empowerment",
+      },
+    ],
+  },
+  {
+    id: 2,
+    service_name: "Ministry preparations",
+    times: ["2:00PM", "5:00PM"],
+    sessions: [
+      {
+        id: 0,
+        sessionName: "Children’s ministry practice",
+        sessionDetails:
+          "Creative rehearsals to engage children in dynamic Bible lessons for Sunday",
+      },
+      {
+        id: 1,
+        sessionName: "Worship team rehearsals",
+        sessionDetails:
+          "Thursday  & Saturday – Practice sessions to ensure impactful worship services.",
+      },
+      {
+        id: 2,
+        sessionName: "Event preparation & briefing",
+        sessionDetails:
+          "Every Saturday - Final walkthroughs and briefings for Sunday service execution",
+      },
+    ],
+  },
+  {
+    id: 3,
+    service_name: "Ministry meetings",
+    times: ["2:00PM", "5:00PM"],
+    sessions: [
+      {
+        id: 0,
+        sessionName: "Women’s meeting",
+        sessionDetails:
+          "A quiet, reflective time to start your day in worship and prayer.The earliest bird catches the worm",
+      },
+      {
+        id: 1,
+        sessionName: "Men’s Fellowship",
+        sessionDetails: "Sunday after the main service",
+      },
+      {
+        id: 2,
+        sessionName: "Youth Ministry",
+        sessionDetails:
+          "Tuesday & Sunday - Energetic gatherings focused on teaching, worship, and building youth leadership.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    service_name: "Saturday preparations",
+    times: ["2:00PM", "5:00PM"],
+    sessions: [
+      {
+        id: 0,
+        sessionName: "Children’s Ministry Practice",
+        sessionDetails:
+          "Every Saturday - A dedicated time for rehearsing activities and Bible stories for the children's ministry",
+      },
+      {
+        id: 1,
+        sessionName: "Worship Team & Choir Rehearsals",
+        sessionDetails:
+          "Fine-tuning musical and vocal arrangements for Sunday worship.",
+      },
+      {
+        id: 2,
+        sessionName: "Service Review & Setup",
+        sessionDetails:
+          "A team meeting to go over service flow, technical needs, and final touches.",
+      },
+    ],
+  },
+];
