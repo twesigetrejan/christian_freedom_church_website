@@ -284,6 +284,7 @@ export interface Session {
 
 export interface DepartmentServices {
   id: number;
+  img: string;
   service_name: string;
   times: string[];
   sessions: Session[];
@@ -309,11 +310,12 @@ export const departmentServices: DepartmentServices[] = [
       },
       {
         id: 2,
-        sessionName: "Main service",
+        sessionName: "Men's service",
         sessionDetails:
           "After the Main Service, men's meeting followed by youth fellowship to deepen relationships and spiritual growth.",
       },
     ],
+    img: "/Images/services/sunday.png",
   },
   {
     id: 1,
@@ -339,6 +341,7 @@ export const departmentServices: DepartmentServices[] = [
           "As scheduled - Tailored Bible sessions that offer practical applications and spiritual empowerment",
       },
     ],
+    img: "/Images/services/biblestudy.png",
   },
   {
     id: 2,
@@ -364,6 +367,7 @@ export const departmentServices: DepartmentServices[] = [
           "Every Saturday - Final walkthroughs and briefings for Sunday service execution",
       },
     ],
+    img: "/Images/services/preparations.png",
   },
   {
     id: 3,
@@ -388,6 +392,7 @@ export const departmentServices: DepartmentServices[] = [
           "Tuesday & Sunday - Energetic gatherings focused on teaching, worship, and building youth leadership.",
       },
     ],
+    img: "/Images/services/meetings.png",
   },
   {
     id: 4,
@@ -413,5 +418,6 @@ export const departmentServices: DepartmentServices[] = [
           "A team meeting to go over service flow, technical needs, and final touches.",
       },
     ],
+    img: "/Images/services/saturdaypreps.png",
   },
 ];
