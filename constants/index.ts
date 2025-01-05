@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
-// Interfaces
+// Interfaces remain exactly the same
 interface NavLink {
   id: number;
   title: string;
@@ -37,7 +37,6 @@ interface InquireProp {
   icon: LucideIcon;
 }
 
-// Navigation Links
 export const navlinks: NavLink[] = [
   {
     id: 0,
@@ -49,7 +48,6 @@ export const navlinks: NavLink[] = [
     title: "Services & Departments",
     route: "/services",
   },
-
   {
     id: 2,
     title: "Events",
@@ -67,7 +65,6 @@ export const navlinks: NavLink[] = [
   },
 ];
 
-// Service Cards
 export const ServiceCardProps: ServiceCard[] = [
   {
     id: 0,
@@ -169,17 +166,15 @@ export const leadershipTeam: LeadershipTeam[] = [
   {
     id: 3,
     leaderName: "Jane Doe",
-    title: "Women’s lead",
+    title: "Women's lead",
     img: "/Images/womenlead.png",
   },
-
   {
     id: 4,
     leaderName: "Jjuuko Isaac",
     title: "Socials Manager",
     img: "/Images/socialsmanager.png",
   },
-
   {
     id: 5,
     leaderName: "Keyla Smith",
@@ -246,9 +241,9 @@ export interface EventHighlights {
 export const eventHighlights: EventHighlights[] = [
   {
     id: 0,
-    eventName: "New year’s eve overnight",
+    eventName: "New year's eve overnight",
     details:
-      "Our New Year’s Eve overnight celebration was a powerful and unforgettable experience as we gathered to dedicate the year ahead to his guidance",
+      "Our New Year's Eve overnight celebration was a powerful and unforgettable experience as we gathered to dedicate the year ahead to his guidance",
     img: "/Images/events/overnight.png",
   },
   {
@@ -260,23 +255,23 @@ export const eventHighlights: EventHighlights[] = [
   },
   {
     id: 2,
-    eventName: "Children's fun day ",
+    eventName: "Children's fun day",
     details:
-      "Our Children’s Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
+      "Our Children's Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
     img: "/Images/events/children.png",
   },
   {
     id: 3,
-    eventName: "Children's fun day ",
+    eventName: "Children's fun day",
     details:
-      "Our Children’s Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
+      "Our Children's Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
     img: "/Images/events/children.png",
   },
   {
     id: 4,
-    eventName: "Children's fun day ",
+    eventName: "Children's fun day",
     details:
-      "Our Children’s Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
+      "Our Children's Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
     img: "/Images/events/children.png",
   },
 ];
@@ -286,7 +281,6 @@ export interface Session {
   sessionName: string;
   sessionDetails: string;
 }
-
 
 export interface DepartmentServices {
   id: number;
@@ -305,7 +299,7 @@ export const departmentServices: DepartmentServices[] = [
         id: 0,
         sessionName: "Morning service",
         sessionDetails:
-          "A quiet, reflective time to start your day in worship and prayer.The earliest bird catches the worm",
+          "A quiet, reflective time to start your day in worship and prayer. The earliest bird catches the worm",
       },
       {
         id: 1,
@@ -317,7 +311,7 @@ export const departmentServices: DepartmentServices[] = [
         id: 2,
         sessionName: "Main service",
         sessionDetails:
-          " After the Main Service, men’s meeting followed by youth fellowship to deepen relationships and spiritual growth.",
+          "After the Main Service, men's meeting followed by youth fellowship to deepen relationships and spiritual growth.",
       },
     ],
   },
@@ -353,7 +347,7 @@ export const departmentServices: DepartmentServices[] = [
     sessions: [
       {
         id: 0,
-        sessionName: "Children’s ministry practice",
+        sessionName: "Children's ministry practice",
         sessionDetails:
           "Creative rehearsals to engage children in dynamic Bible lessons for Sunday",
       },
@@ -361,7 +355,7 @@ export const departmentServices: DepartmentServices[] = [
         id: 1,
         sessionName: "Worship team rehearsals",
         sessionDetails:
-          "Thursday  & Saturday – Practice sessions to ensure impactful worship services.",
+          "Thursday & Saturday - Practice sessions to ensure impactful worship services.",
       },
       {
         id: 2,
@@ -378,13 +372,13 @@ export const departmentServices: DepartmentServices[] = [
     sessions: [
       {
         id: 0,
-        sessionName: "Women’s meeting",
+        sessionName: "Women's meeting",
         sessionDetails:
-          "A quiet, reflective time to start your day in worship and prayer.The earliest bird catches the worm",
+          "A quiet, reflective time to start your day in worship and prayer. The earliest bird catches the worm",
       },
       {
         id: 1,
-        sessionName: "Men’s Fellowship",
+        sessionName: "Men's Fellowship",
         sessionDetails: "Sunday after the main service",
       },
       {
@@ -402,7 +396,7 @@ export const departmentServices: DepartmentServices[] = [
     sessions: [
       {
         id: 0,
-        sessionName: "Children’s Ministry Practice",
+        sessionName: "Children's Ministry Practice",
         sessionDetails:
           "Every Saturday - A dedicated time for rehearsing activities and Bible stories for the children's ministry",
       },
