@@ -30,7 +30,9 @@ export const DepartmentServices = () => {
             />
             <div
               className={`max-w-[893px] w-full p-4 gap-10 flex flex-col bg-greyer ${
-                index % 2 !== 0 ? "mr-[-56px]" : "ml-[-56px]"
+                index % 2 !== 0
+                  ? "mr-[-56px] rounded-l-2xl"
+                  : "ml-[-56px] rounded-r-2xl"
               }`}
             >
               <div className="flex gap-12 items-center">
@@ -41,7 +43,10 @@ export const DepartmentServices = () => {
                   <Clock className="w-4 h-4 text-primary" />
                   <div className="flex gap-[8px]">
                     {service.times.map((time, index) => (
-                      <p className="text-greener text-p2" key={index}>
+                      <p
+                        className="text-greener text-p2 font-medium"
+                        key={index}
+                      >
                         {time}
                       </p>
                     ))}

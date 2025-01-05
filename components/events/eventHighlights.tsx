@@ -34,7 +34,7 @@ export const EventHighlights = () => {
                     alt={highlight.eventName}
                     width={300}
                     height={300}
-                    className="object-cover w-full aspect-square"
+                    className="object-cover w-full aspect-square rounded-2xl"
                   />
                   <h4 className="mt-4 font-semibold text-p2">
                     {highlight.eventName}

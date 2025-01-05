@@ -60,7 +60,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-[465px] border-none shadow-2xl sm:px-0 sm:w-full">
+    <Card className="w-full max-w-[465px] border-none shadow-2xl sm:px-0 sm:w-full rounded-2xl">
       <CardHeader>
         <CardTitle className="text-primary ">
           <h3 className="text-h3">Contact us</h3>

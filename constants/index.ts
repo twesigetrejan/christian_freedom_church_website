@@ -253,12 +253,13 @@ export const eventHighlights: EventHighlights[] = [
       "Our Christmas Celebration was a heartwarming evening filled with worship, community, and the true spirit of Christmas",
     img: "/Images/events/xmas.png",
   },
+
   {
     id: 2,
-    eventName: "Children's fun day",
+    eventName: "Wedding of Alex and Sarah",
     details:
-      "Our Children's Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
-    img: "/Images/events/children.png",
+      "On October 14, 2024, our church was honored to host the beautiful wedding of Alex and Sarah. It was a day filled with joy, love",
+    img: "/Images/events/wedding.png",
   },
   {
     id: 3,
@@ -269,10 +270,17 @@ export const eventHighlights: EventHighlights[] = [
   },
   {
     id: 4,
-    eventName: "Children's fun day",
+    eventName: "Community cleaning",
     details:
-      "Our Children's Fun Day was a delightful and energetic event where kids from the community came together to play, learn, and grow in faith",
-    img: "/Images/events/children.png",
+      "The event was more than just a cleaning effort; it was a chance to build relationships, share love through action, and inspire others",
+    img: "/Images/events/clean.png",
+  },
+  {
+    id: 5,
+    eventName: "Music and drama",
+    details:
+      "The event was a powerful expression of worship and storytelling, featuring moving musical performances and a captivating theatrical production.",
+    img: "/Images/events/dance.png",
   },
 ];
 

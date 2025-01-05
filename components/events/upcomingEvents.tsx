@@ -34,7 +34,7 @@ export const UpcomingEvents = () => {
                       </div>
                     </div>
                     <Image
-                      className="object-cover"
+                      className="object-cover rounded-2xl"
                       src={upcomingEvent.img}
                       alt={upcomingEvent.eventName}
                       width={278}
@@ -47,12 +47,12 @@ export const UpcomingEvents = () => {
                       <h3 className="font-semibold text-h3">
                         {upcomingEvent.eventName}
                       </h3>
-                      <div className="flex items-center gap-2">
-                        <p className="uppercase text-greener">
+                      <div className="flex items-center gap-2 ">
+                        <p className="uppercase text-greener text-p2">
                           {upcomingEvent.eventDay}
                         </p>
-                        <Clock className="w-4 h-4 text-primary" />
-                        <p className="text-greener">
+                        <Clock className="w-3 h-3 text-primary" />
+                        <p className="text-greener text-p2">
                           {upcomingEvent.eventTime}
                         </p>
                       </div>

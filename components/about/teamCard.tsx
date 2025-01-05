@@ -12,7 +12,7 @@ const TeamGrid = () => {
               <Image
                 src={leader.img}
                 alt={`${leader.leaderName} - ${leader.title}`}
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 width={270}
                 height={300}
               />
