@@ -32,7 +32,7 @@ const Hero = () => {
             Become part of something great
           </h1>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[37px] w-full">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-x-4 sm:gap-[37px] w-full">
             <h1 className="text-dark font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-Montserrat leading-tight">
               today, cfc welcomes you
             </h1>
