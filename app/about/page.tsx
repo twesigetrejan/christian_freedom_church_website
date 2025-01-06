@@ -9,15 +9,17 @@ export const About = () => {
   return (
     <Container>
       <div className="py-10 flex flex-col items-center justify-center">
-        <div className="max-w-[1200px] pb-10">
-          <Image
-            layout=""
-            height={345}
-            width={1200}
-            className="object-cover rounded-2xl"
-            src={"/Images/about/about-hero2.png"}
-            alt={"About Hero Image"}
-          />
+        <div className="flex justify-center pt-8 sm:pt-[52px] pb-8 sm:pb-[60px] w-full">
+          <div className="relative w-full h-[200px] sm:h-[320px] rounded-2xl overflow-hidden">
+            <Image
+              src={"/Images/about/about-hero2.png"}
+              alt={"hero image"}
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1280px"
+            />
+          </div>
         </div>
         <MissionVision />
 

@@ -37,9 +37,9 @@ const WelcomeMessage = () => {
 
   return (
     <Container>
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 px-4 md:px-8 lg:px-[60px]">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
         {/* video section */}
-        <div className="relative w-full md:w-[400px] h-[300px] md:h-[400px] rounded-2xl overflow-hidden">
+        <div className="relative w-full md:w-[600px] h-[300px] md:h-[400px] rounded-2xl overflow-hidden">
           {isPlaying ? (
             <Video />
           ) : (
@@ -55,7 +55,7 @@ const WelcomeMessage = () => {
               <Image
                 src={"/Images/welcome.jpg"}
                 alt={"Sunday second service welcome message"}
-                width={400}
+                width={600}
                 height={400}
                 className="w-full object-cover object-center rounded-md h-full"
               />
