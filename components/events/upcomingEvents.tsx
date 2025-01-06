@@ -4,7 +4,6 @@ import Image from "next/image";
 import { upcomingEvents } from "@/constants";
 import { ArrowRight, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
-import Container from "../container";
 
 export const UpcomingEvents = () => {
   const router = useRouter();
@@ -14,7 +13,7 @@ export const UpcomingEvents = () => {
   };
 
   return (
-    <Container>
+  
       <div className="pt-10 flex flex-col gap-10 pb-10">
         <h3 className="font-semibold text-center text-h2">Upcoming events</h3>
         <div className="flex flex-col gap-10">
@@ -70,6 +69,5 @@ export const UpcomingEvents = () => {
             ))}
         </div>
       </div>
-    </Container>
   );
 };

@@ -6,14 +6,14 @@ export const Services = () => {
   return (
     <Container>
       <div className="py-10 flex flex-col items-center justify-center">
-        <div className="max-w-[1200px] pb-10">
+        <div className="relative w-full h-[200px] sm:h-[320px] rounded-2xl overflow-hidden px-4 sm:px-0">
           <Image
-            layout=""
-            height={345}
-            width={1200}
-            className="object-cover rounded-2xl"
             src={"/Images/services/service-hero.png"}
-            alt={"Service Hero Image"}
+            alt={"hero image"}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1280px"
           />
         </div>
       </div>

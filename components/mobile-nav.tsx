@@ -8,8 +8,14 @@ import {
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { navlinks } from "@/constants";
+import { useRouter } from "next/navigation";
 
 export const MobileNavigation = () => {
+  const router = useRouter();
+
+  const Join = () => {
+    router.push("/give");
+  };
   return (
     <div className="">
       <Sheet>
@@ -32,7 +38,9 @@ export const MobileNavigation = () => {
                 </Link>
               ))}
             <div className="pt-10">
-              <button className="btn1">Donate</button>
+              <button onClick={Join} className="btn1">
+                Donate
+              </button>
             </div>
           </SheetHeader>
         </SheetContent>
