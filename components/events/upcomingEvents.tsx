@@ -19,8 +19,9 @@ export const UpcomingEvents = () => {
         {upcomingEvents &&
           upcomingEvents.map((upcomingEvent) => (
             <div className="flex justify-center" key={upcomingEvent.id}>
-              <div className="flex gap-[108px] w-full max-w-[1200px]">
-                <div className="flex gap-[108px]">
+              <div className="flex flex-col gap-10 w-full max-w-[1200px] px-4 sm:px-0 sm:flex-row">
+                {/* Date Block */}
+                <div className="flex gap-6 sm:gap-[108px] flex-col sm:flex-row items-center justify-center">
                   <div className="w-[146px] h-[128px] flex-shrink-0 flex flex-col items-center justify-center border-2 border-greener rounded-2xl">
                     <div className="w-[88px] h-[88px] flex flex-col items-center justify-center">
                       <p className="text-primary font-semibold">
@@ -39,13 +40,13 @@ export const UpcomingEvents = () => {
                     height={400}
                   />
                 </div>
-                {/* content */}
-                <div className="flex flex-col max-w-[560px] gap-10">
+                {/* Content Block */}
+                <div className="flex flex-col max-w-[560px] gap-6">
                   <div className="flex gap-5 flex-col justify-center">
                     <h3 className="font-semibold text-h3">
                       {upcomingEvent.eventName}
                     </h3>
-                    <div className="flex items-center gap-2 ">
+                    <div className="flex items-center gap-2">
                       <p className="uppercase text-greener text-p2">
                         {upcomingEvent.eventDay}
                       </p>
@@ -56,7 +57,7 @@ export const UpcomingEvents = () => {
                     </div>
                   </div>
                   <p className="text-p1">{upcomingEvent.details}</p>
-                  <div className="">
+                  <div>
                     <button onClick={Join} className="btn flex items-center">
                       Register
                       <ArrowRight className="w-4 h-4 ml-2" />
