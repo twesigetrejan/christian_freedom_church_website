@@ -31,19 +31,18 @@ export const Give = () => {
                 width={225}
                 height={225}
                 className=""
-                src="/Images/give/mtn.png"
-                alt="mtn logo"
+                src="/Images/give/airtel.png"
+                alt="airtel logo"
               />
               <p className="text-dark text-p1">+256 752 566 228</p>
             </div>
-
             <div className="flex flex-col gap-5 items-center justify-center">
               <Image
                 width={225}
                 height={225}
                 className=""
-                src="/Images/give/airtel.png"
-                alt="airtel logo"
+                src="/Images/give/mtn.png"
+                alt="mtn logo"
               />
               <p className="text-dark text-p1">+256 752 566 228</p>
             </div>

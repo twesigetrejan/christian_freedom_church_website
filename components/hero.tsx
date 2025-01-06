@@ -13,8 +13,8 @@ const Hero = () => {
   };
   return (
     <Container>
-      <div className="flex flex-col gap-4 w-full">
-        <div className="flex justify-center pt-8 sm:pt-[52px] pb-8 sm:pb-[60px] w-full">
+      <div className="flex flex-col gap-4 w-full pb-20">
+        <div className="flex justify-center pt-8 sm:pt-[52px] pb-8 sm:pb-[32px] w-full">
           <div className="relative w-full h-[200px] sm:h-[320px] rounded-2xl overflow-hidden">
             <Image
               src={"/Images/hero-image.png"}

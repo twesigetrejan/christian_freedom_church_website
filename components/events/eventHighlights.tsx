@@ -44,8 +44,8 @@ export const EventHighlights = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-6 top-40" />
-          <CarouselNext className="hidden md:flex -right-6 top-40" />
+          <CarouselPrevious className="hidden md:flex -left-10 top-40" />
+          <CarouselNext className="hidden md:flex -right-10 top-40" />
         </Carousel>
       </div>
     </div>
