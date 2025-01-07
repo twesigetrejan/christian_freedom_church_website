@@ -1,6 +1,5 @@
 import { leadershipTeam } from "@/constants";
 import Image from "next/image";
-import Container from "../container";
 
 const TeamGrid = () => {
   return (
