@@ -13,7 +13,7 @@ const ServiceSection = () => {
           {ServiceCardProps &&
             ServiceCardProps.map((ServiceCardProp) => (
               <div
-                className="relative h-[400px] w-full md:max-w-[320px] md:mx-auto"
+                className="relative h-[400px] w-full max-w-[320px] mx-auto"
                 key={ServiceCardProp.id}
               >
                 <Image

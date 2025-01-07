@@ -7,13 +7,13 @@ export const MissionVision = () => {
       <div className="flex flex-col md:flex-row gap-[120px] items-center md:text-left">
         <div className="flex flex-col gap-6 max-w-[238px]">
           <h2 className="text-h3 font-semibold">Our mission</h2>
-          <p className="text-p1 ">
+          <p className="text-p1">
             To share the love of Christ, foster spiritual growth, and serve our
             community with compassion and faith.
           </p>
         </div>
         {/* Image section */}
-        <div>
+        <div className="hidden md:block">
           <Image
             src={"/Images/about/mission2.png"}
             width={350}
@@ -22,10 +22,11 @@ export const MissionVision = () => {
           />
         </div>
       </div>
-      {/* vission */}
+
+      {/* vision */}
       <div className="flex flex-col md:flex-row gap-[160px] items-center md:text-left">
         {/* Image section */}
-        <div>
+        <div className="hidden md:block ">
           <Image
             src={"/Images/about/vision2.png"}
             width={350}
@@ -36,7 +37,7 @@ export const MissionVision = () => {
 
         <div className="flex flex-col gap-6 max-w-[238px]">
           <h2 className="text-h3 font-semibold">Our vision</h2>
-          <p className="text-p1 ">
+          <p className="text-p1">
             To build a welcoming and vibrant community where all are inspired to
             grow in faith, find purpose, and make a positive impact on the world
           </p>

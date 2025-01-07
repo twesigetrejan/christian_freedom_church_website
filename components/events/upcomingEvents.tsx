@@ -21,8 +21,8 @@ export const UpcomingEvents = () => {
             <div className="flex justify-center" key={upcomingEvent.id}>
               <div className="flex flex-col gap-10 w-full max-w-[1200px] px-4 sm:px-0 sm:flex-row">
                 {/* Date Block */}
-                <div className="flex gap-6 sm:gap-[108px] flex-col sm:flex-row items-center justify-center">
-                  <div className="w-[146px] h-[128px] flex-shrink-0 flex flex-col items-center justify-center border-2 border-greener rounded-2xl">
+                <div className="flex gap-6 sm:gap-[108px] flex-col sm:flex-row justify-center items-center lg:items-start ">
+                  <div className="w-[146px] h-[128px] flex-shrink-0 lg:flex flex-col items-center justify-center border-2 border-greener rounded-2xl hidden ">
                     <div className="w-[88px] h-[88px] flex flex-col items-center justify-center">
                       <p className="text-primary font-semibold">
                         {upcomingEvent.dayOfMonth}

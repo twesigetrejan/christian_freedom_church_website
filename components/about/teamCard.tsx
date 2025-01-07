@@ -5,10 +5,10 @@ import Container from "../container";
 const TeamGrid = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 w-full">
         {leadershipTeam.map((leader) => (
-          <div className="max-w-[270px] flex flex-col" key={leader.id}>
-            <div className="relative w-full  overflow-hidden">
+          <div className="flex flex-col" key={leader.id}>
+            <div className="relative w-full overflow-hidden">
               <Image
                 src={leader.img}
                 alt={`${leader.leaderName} - ${leader.title}`}
