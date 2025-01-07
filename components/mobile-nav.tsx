@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -12,33 +13,46 @@ import { useRouter } from "next/navigation";
 
 export const MobileNavigation = () => {
   const router = useRouter();
+  const [open, setOpen] = useState(false);
 
-  const Join = () => {
-    router.push("/give");
+  const handleNavigation = (route: string) => {
+    setOpen(false);
+    router.push(route);
   };
+
   return (
     <div className="">
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Menu className="w-6 h-6 cursor-pointer" />
         </SheetTrigger>
 
         <SheetContent>
           <SheetHeader>
-            <SheetTitle className="text-xl font-semibold "></SheetTitle>
+            <SheetTitle className="text-xl font-semibold"></SheetTitle>
 
             {navlinks &&
               navlinks.map((navlink) => (
                 <Link
                   key={navlink.id}
                   href={navlink.route}
-                  className=" transition-all duration-300  hover:border-b-[1px] hover:text-black hover:text-lg text-white"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation(navlink.route);
+                  }}
+                  className="transition-all duration-300 hover:border-b-[1px] hover:text-black hover:text-lg text-white"
                 >
                   {navlink.title}
                 </Link>
               ))}
             <div className="pt-10">
-              <button onClick={Join} className="btn1">
+              <button
+                onClick={() => {
+                  setOpen(false);
+                  router.push("/give");
+                }}
+                className="btn1"
+              >
                 Donate
               </button>
             </div>
