@@ -7,7 +7,7 @@ const Values = () => {
     <Container>
       <div className=" flex flex-col gap-10">
         <div className="max-w-2xl mx-auto text-center pt-[52px]">
-          <h1 className="text-h3 font-bold mb-4  text-clip">Our Values</h1>
+          <h1 className="text-h2 font-bold mb-4 text-clip">Our Values</h1>
           <p className="text-p1">
             Timeless guiding principles that reflect our faith, shape our
             mission and inspire us to serve with love and purpose
@@ -30,7 +30,7 @@ const Values = () => {
                   />
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-1">
                   <h3 className="text-p1 font-bold font-sans">
                     {valueProp.value}
                   </h3>

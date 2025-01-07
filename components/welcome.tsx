@@ -65,7 +65,7 @@ const WelcomeMessage = () => {
 
         {/* content section */}
         <div className="py-8 md:py-[117px] flex flex-col items-start">
-          <h3 className="pb-6 md:pb-8  md:text-h3 font-semibold max-w-full md:max-w-[580px] ">
+          <h3 className="pb-6 md:pb-8 max-w-full md:max-w-[580px] font-semibold text-h2">
             Welcome to Christian Freedom Church!
           </h3>
           <div className="flex flex-col gap-4 pb-6 md:pb-8 max-w-full md:max-w-[496px] text-dark">
