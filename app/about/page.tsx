@@ -5,7 +5,8 @@ import TeamGrid from "@/components/about/teamCard";
 import MinistryLeadership from "@/components/about/ministry-leadership";
 import { JoinCfc } from "@/components/about/joinUs";
 import Container from "@/components/container";
-export const About = () => {
+
+const About = () => {
   return (
     <Container>
       <div className="py-10 flex flex-col items-center justify-center">
