@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/container";
 
-export const Give = () => {
+const Give = () => {
   return (
     <Container>
       <div className="py-10">
