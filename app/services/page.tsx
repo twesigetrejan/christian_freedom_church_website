@@ -2,7 +2,7 @@ import Image from "next/image";
 import { DepartmentServices } from "@/components/departmentServices/departmentServices";
 
 import Container from "@/components/container";
-export const Services = () => {
+const Services = () => {
   return (
     <Container>
       <div className="py-10 flex flex-col items-center justify-center">
