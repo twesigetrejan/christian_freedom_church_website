@@ -5,7 +5,7 @@ export const MinistryLeadership = () => {
     <Container>
       <div className="flex flex-col justify-center gap-6 items-center pt-10">
         <h2 className="text-h2 font-bold">Ministry leadership team</h2>
-        <p className="text-[14px] max-w-[618px] text-center mb-10">
+        <p className="text-p1 max-w-[618px] text-center mb-10">
           Christian Freedom Church is a faith based community church led by our
           senior Pastor Bishop Dr. Godfrey Musisi Juuko and his loving wife
           Pastor Christine Musisi
