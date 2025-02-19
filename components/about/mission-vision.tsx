@@ -19,6 +19,7 @@ export const MissionVision = () => {
             width={350}
             height={330}
             alt="Mission Image"
+            className="rounded-2xl"
           />
         </div>
       </div>
@@ -32,6 +33,7 @@ export const MissionVision = () => {
             width={350}
             height={330}
             alt="Mission Image"
+            className="rounded-2xl"
           />
         </div>
 
